@@ -1,12 +1,13 @@
-# nng-async
+# nng-futures
 
 Futures-based wrappers for NNG sockets in Rust.
-Uses the [nng](https://crates.io/crates/nng) crate from Nate Kent.
+The goal is to simplify the use of NNG sockets in async Rust code.
+Wraps the [nng](https://crates.io/crates/nng) crate from Nate Kent.
 
 ## Status
 
-| Socket Type | Async Type |
-|-------------|------------|
+| Socket Type | Futures Type |
+|-------------|--------------|
 | [`Pub0`](https://docs.rs/nng/latest/nng/enum.Protocol.html#variant.Pub0) | [`Sink`](https://docs.rs/futures/latest/futures/sink/trait.Sink.html) |
 | [`Sub0`](https://docs.rs/nng/latest/nng/enum.Protocol.html#variant.Sub0) | [`Stream`](https://docs.rs/futures/latest/futures/stream/trait.Stream.html) |
 | [`Bus0`](https://docs.rs/nng/latest/nng/enum.Protocol.html#variant.Bus0) | _Not Implemented_ |
